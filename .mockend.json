@@ -1,5 +1,40 @@
 {
-    "User": {
-      "title": { "string": {} }
+    "user": {
+        "title": {
+            "string": {}
+        }
+    },
+    "cancel": {
+        "code": 1,
+        "msg": "success",
+        "total": 10,
+        "data": 
+            [{
+                "id": {"integer": {}},
+                "testName": "cancel card",
+                "level": "1",
+                "env": "qa",
+                "isSkipPage": "0",
+                "repeatTimes": "2",
+                "referenceName": "charge authorized",
+                "request": {
+                    "reference": "",
+                    "id": "",
+                    "transaction_reference": ""
+                },
+                "expect": {
+                    "status": "success",
+                    "app": "citcon_upi",
+                    "data": {
+                        "id": "",
+                        "status": "canceled"
+                    }
+                },
+                "unexpect": null,
+                "dbCheck": null,
+                "createAt": 1654776682000,
+                "updateAt": 1654776682000,
+                "isDeleted": "0"
+            }],
     }
-  }
+}
