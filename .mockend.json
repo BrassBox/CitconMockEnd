@@ -1,10 +1,10 @@
 {
-    "user": {
+    "User": {
         "title": {
             "string": {}
         }
     },
-    "cancel": {
+    "Cancel": {
         "code": 1,
         "msg": "success",
         "total": 10,
