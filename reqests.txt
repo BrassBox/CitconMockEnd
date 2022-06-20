@@ -1,0 +1,1 @@
+GET http://my.api.url/tests?sort=["updateAt","DESC"]&range=[0, 24]&filter={"fixtureId":1}
