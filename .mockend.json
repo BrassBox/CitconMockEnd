@@ -5,9 +5,18 @@
         }
     },
     "Cancel": {
-        "code": 1,
-        "msg": "success",
-        "total": 10,
+        "code": {
+            "int": [1]
+        },
+        "msg": {
+            "string": ["success"]
+        },
+        "total": {
+            "int": {
+                "min": 1,
+                "max": 100
+            }
+        },
         "data": [{
             "id": {
                 "int": {
