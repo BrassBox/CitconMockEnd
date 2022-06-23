@@ -10,7 +10,7 @@
             "string": {}
         }
     },
-    "Cancel": {
+    "Tests": {
         "code": {
             "int": [1]
         },
@@ -23,37 +23,40 @@
                 "max": 100
             }
         },
-        "data": [{
-            "id": {
-                "int": {
-                    "min": 0,
-                    "max": 16777216
-                }
-            },
-            "testName": "cancel card",
-            "level": "1",
-            "env": "qa",
-            "isSkipPage": "0",
-            "repeatTimes": "2",
-            "referenceName": "charge authorized",
-            "request": {
-                "reference": "",
+        "data": {
+            "hasMany": "Test"
+        }
+    },
+    "Test" : {
+        "id": {
+            "int": {
+                "min": 0,
+                "max": 16777216
+            }
+        },
+        "testName": "cancel card",
+        "level": "1",
+        "env": "qa",
+        "isSkipPage": "0",
+        "repeatTimes": "2",
+        "referenceName": "charge authorized",
+        "request": {
+            "reference": "",
+            "id": "",
+            "transaction_reference": ""
+        },
+        "expect": {
+            "status": "success",
+            "app": "citcon_upi",
+            "data": {
                 "id": "",
-                "transaction_reference": ""
-            },
-            "expect": {
-                "status": "success",
-                "app": "citcon_upi",
-                "data": {
-                    "id": "",
-                    "status": "canceled"
-                }
-            },
-            "unexpect": null,
-            "dbCheck": null,
-            "createAt": 1654776682000,
-            "updateAt": 1654776682000,
-            "isDeleted": "0"
-        }]
+                "status": "canceled"
+            }
+        },
+        "unexpect": null,
+        "dbCheck": null,
+        "createAt": 1654776682000,
+        "updateAt": 1654776682000,
+        "isDeleted": "0"
     }
 }
