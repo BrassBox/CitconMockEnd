@@ -8,63 +8,21 @@
         },
         "name": {
             "string": {}
+        },
+        "posts": {
+            "hasMany": "Post"
         }
     },
-    "Tests": {
+    "Post": {
         "id": {
             "int": {
                 "min": 0,
-                "max": 2147483647
+                "max": 2700000
             }
         },
-
-        "testName": "cancel card",
-        "level": {
-            "int": [0, 1, 2, 3]
-        },
-        "env": {
-            "string": ["qa"]
-        },
-        "isSkipPage": false,
-        "repeatTimes": {
-            "int": [0, 1, 2, 3]
-        },
-        "referenceName": {
-            "string": ["charge authorized"]
-        },
-        "request": {
-            "reference": "",
-            "id": "",
-            "transaction_reference": ""
-        },
-        "expect": {
-            "status": {
-                "string": ["success"]
-            },
-            "app": {
-                "string": ["citcon_upi"]
-            },
-            "data": {
-                "id": "",
-                "status": "canceled"
-            }
-        },
-        "unexpect": null,
-        "dbCheck": null,
-        "createAt": {
-            "int": {
-                "min": 1621771682000,
-                "max": 1624771682000
-            }
-        },
-        "updateAt": {
-            "int": {
-                "min": 1621771682000,
-                "max": 1656937236000
-            }
-        },
-        "isDeleted": {
-            "boolean": {}
+        "text": {
+            "string": ["A", "B", "C"]
         }
-    }
+    },
+    
 }
