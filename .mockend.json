@@ -11,34 +11,18 @@
         }
     },
     "Tests": {
-        "code": {
-            "int": [1]
-        },
-        "msg": {
-            "string": ["success"]
-        },
-        "total": {
-            "int": {
-                "min": 1,
-                "max": 100
-            }
-        },
-        "data": {
-            "hasMany": "Test"
-        }
-    },
-    "Test" : {
         "id": {
             "int": {
-                "min": 0,
-                "max": 16777216
+                "max": 2147483647,
+                "min": 0
             }
         },
+        
         "testName": "cancel card",
         "level": "1",
         "env": "qa",
-        "isSkipPage": "0",
-        "repeatTimes": "2",
+        "isSkipPage": false,
+        "repeatTimes": 2,
         "referenceName": "charge authorized",
         "request": {
             "reference": "",
@@ -55,8 +39,20 @@
         },
         "unexpect": null,
         "dbCheck": null,
-        "createAt": 1654776682000,
-        "updateAt": 1654776682000,
-        "isDeleted": "0"
+        "createAt": {
+            "int": {
+                "min": 1621771682000,
+                "max": 1624771682000
+            }
+        },
+        "updateAt": {
+            "int": {
+                "min": 1621771682000,
+                "max": 1656937236000
+            }
+        },
+        "isDeleted": {
+            "boolean": {}
+        }
     }
 }
