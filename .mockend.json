@@ -17,13 +17,17 @@
                 "min": 0
             }
         },
-        
+
         "testName": "cancel card",
-        "level": "1",
+        "level": {
+            "int": [0,1,2,3]
+        },
         "env": "qa",
         "isSkipPage": false,
-        "repeatTimes": 2,
-        "referenceName": "charge authorized",
+        "repeatTimes": {
+            "int": [0,1,2,3]
+        },
+        "referenceName": ["charge authorized"],
         "request": {
             "reference": "",
             "id": "",
