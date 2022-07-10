@@ -39,6 +39,7 @@
         "env": {
             "string": ["qa"]
         },
+        "isSkipPage": { "string": [""]},
         "repeatTimes": {
             "int": [0, 1, 2, 3]
         },
@@ -62,7 +63,8 @@
                 "min": 1621771682000,
                 "max": 1656937236000
             }
-        }
+        },
+        "isDeleted": { "string": [""]}
     }
     
 }
