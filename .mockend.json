@@ -32,14 +32,14 @@
             }
         },
 
-        "testName": "cancel card",
+        "testName": {"string": ["cancel card"]},
         "level": {
             "int": [0, 1, 2, 3]
         },
         "env": {
             "string": ["qa"]
         },
-        "isSkipPage": false,
+        "isSkipPage": {"boolean": [false]},
         "repeatTimes": {
             "int": [0, 1, 2, 3]
         },
