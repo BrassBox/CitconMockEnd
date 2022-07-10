@@ -39,7 +39,7 @@
         "env": {
             "string": ["qa"]
         },
-        "isSkipPage": {"boolean": false},
+        "isSkipPage": { "boolean": {} },
         "repeatTimes": {
             "int": [0, 1, 2, 3]
         },
