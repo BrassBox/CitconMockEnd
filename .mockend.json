@@ -24,7 +24,7 @@
             "string": ["A", "B", "C"]
         }
     },
-    "Tests": {
+    "Test": {
         "id": {
             "int": {
                 "min": 0,
@@ -39,16 +39,7 @@
         "env": {
             "string": ["qa"]
         },
-        "repeatTimes": {
-            "int": [0, 1, 2, 3]
-        },
-        "referenceName": {
-            "string": ["charge authorized"]
-        },
-        "request": { "string": ["\"reference\": \"\",\"id\": \"\",\"transaction_reference\": \"\""]
-        },
-        "expect": {"string": ["{\"status\": \"success\",\"app\": \"citcon_upi\",\"data\": {\"id\": \"\",\"status\": \"canceled\"}}"]
-        },
+
         "unexpect": {"string": [""]},
         "dbCheck": {"string": [""]},
         "createAt": {
